@@ -1,9 +1,5 @@
 ﻿@using Ucommerce.Catalog.Models
 @model Ucommerce.Masterclass.Models.ProductListViewModel
-@{
-    Layout = "~/views/shared/TwoCol.cshtml";
-
-}
 <div class="m-2 row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     
     @foreach (var product in @Model.ProductViewModels)

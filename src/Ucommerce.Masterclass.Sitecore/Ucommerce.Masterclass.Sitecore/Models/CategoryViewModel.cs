@@ -24,7 +24,7 @@ namespace Ucommerce.Masterclass.Models
         public IList<ProductViewModel> Products { get; set; }
         
         public string ImageMediaUrl { get; set; }
-        public uint TotalProductsCount { get; set; }
+        public int TotalProductsCount { get; set; }
         public IList<FacetsViewModel> Facets { get; set; }
     }
 }

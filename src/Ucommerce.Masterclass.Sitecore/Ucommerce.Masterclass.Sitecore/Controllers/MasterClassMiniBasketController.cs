@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using Sitecore.Mvc.Controllers;
+using System.Linq;
 using System.Web.Mvc;
 using Ucommerce.Api;
 using Ucommerce.Infrastructure;
@@ -7,7 +8,7 @@ using Ucommerce.Masterclass.Models;
 
 namespace Ucommerce.Masterclass.Models
 {
-    public class MasterClassMiniBasketController : Controller
+    public class MasterClassMiniBasketController : SitecoreController
     {
         public ITransactionLibrary TransactionLibrary => ObjectFactory.Instance.Resolve<ITransactionLibrary>();
 

@@ -1,10 +1,9 @@
+using Sitecore.Mvc.Controllers;
 using System.Web.Mvc;
-using Ucommerce.Api;
-using Ucommerce.Infrastructure;
 
 namespace Ucommerce.Masterclass.Models
 {
-    public class MasterClassShippingController : Controller
+    public class MasterClassShippingController : SitecoreController
     {
         [System.Web.Mvc.HttpGet]
         public ActionResult Index()

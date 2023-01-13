@@ -1,9 +1,10 @@
-﻿using System.Web.Mvc;
+﻿using Sitecore.Mvc.Controllers;
+using System.Web.Mvc;
 
 
 namespace Ucommerce.Masterclass.Models
 {
-    public class MasterClassOrderPlacedController : Controller
+    public class MasterClassOrderPlacedController : SitecoreController
     {
         public ActionResult Index()
         {

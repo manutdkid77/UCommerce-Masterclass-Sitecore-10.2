@@ -2,7 +2,6 @@
 @using Ucommerce.Catalog.Models
 @model Ucommerce.Masterclass.Models.ProductViewModel
 @{
-    Layout = "~/views/shared/TwoCol.cshtml";
     
     ProductPriceCalculationResult.Item firstPrice = Model.Prices.First(x => x.VariantSku == null);
     bool hasDiscount = firstPrice.DiscountExclTax > 0;

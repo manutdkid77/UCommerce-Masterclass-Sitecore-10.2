@@ -1,5 +1,5 @@
 # Website root folder (website is deployed here)
-$website_root = "C:\inetpub\sc92\website\sc92sc.dev.local"
+$website_root = "C:\inetpub\wwwroot\vanillacm.dev.local"
 
 # Temporarily change to the correct folder containing script
 $scriptPath = (Get-Variable MyInvocation -Scope Script).Value.MyCommand.Path

@@ -1,3 +1,4 @@
+using Sitecore.Mvc.Controllers;
 using System.Linq;
 using System.Web.Mvc;
 using Ucommerce.Api;
@@ -7,7 +8,7 @@ using Ucommerce.Masterclass.Models;
 
 namespace Ucommerce.Masterclass.Models
 {
-    public class MasterClassPaymentController : Controller
+    public class MasterClassPaymentController : SitecoreController
     {
         public ITransactionLibrary TransactionLibrary => ObjectFactory.Instance.Resolve<ITransactionLibrary>();
 

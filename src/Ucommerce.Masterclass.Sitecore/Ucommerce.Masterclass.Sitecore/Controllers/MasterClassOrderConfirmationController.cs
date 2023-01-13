@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sitecore.Mvc.Controllers;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 using Ucommerce.Api;
@@ -8,7 +9,7 @@ using Ucommerce.Masterclass.Models;
 
 namespace Ucommerce.Masterclass.Controllers
 {
-    public class MasterClassOrderConfirmationController : Controller
+    public class MasterClassOrderConfirmationController : SitecoreController
     {
         public ITransactionLibrary TransactionLibrary => ObjectFactory.Instance.Resolve<ITransactionLibrary>();
 

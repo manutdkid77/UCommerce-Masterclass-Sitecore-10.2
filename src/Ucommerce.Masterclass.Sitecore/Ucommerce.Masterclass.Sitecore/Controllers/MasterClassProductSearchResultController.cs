@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Sitecore.Mvc.Controllers;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Ucommerce.Api;
@@ -11,7 +12,7 @@ using Ucommerce.Search.Slugs;
 
 namespace Ucommerce.Masterclass.Models
 {
-    public class MasterClassProductSearchResultController : Controller
+    public class MasterClassProductSearchResultController : SitecoreController
     {
         public ICatalogLibrary CatalogLibrary => ObjectFactory.Instance.Resolve<ICatalogLibrary>();
         public IUrlService UrlService => ObjectFactory.Instance.Resolve<IUrlService>();

@@ -1,3 +1,4 @@
+using Sitecore.Mvc.Controllers;
 using System.Linq;
 using System.Web.Mvc;
 using Ucommerce.Api;
@@ -8,7 +9,7 @@ using Ucommerce.Masterclass.Models;
 
 namespace Ucommerce.Masterclass.Models
 {
-    public class MasterClassCheckoutPreviewController : Controller
+    public class MasterClassCheckoutPreviewController : SitecoreController
     {
         public ITransactionLibrary TransactionLibrary => ObjectFactory.Instance.Resolve<ITransactionLibrary>();
 
